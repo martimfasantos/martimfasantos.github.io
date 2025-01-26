@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Courses on Martim&#39;s Portfolio</title>
+    <link>http://martimfasantos.github.io/courses/</link>
+    <description>Recent content in Courses on Martim&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://martimfasantos.github.io/courses/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BSc Courses</title>
+      <link>http://martimfasantos.github.io/courses/bsc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://martimfasantos.github.io/courses/bsc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MSc Courses</title>
+      <link>http://martimfasantos.github.io/courses/msc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://martimfasantos.github.io/courses/msc/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

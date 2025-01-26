@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Blog on Martim&#39;s Portfolio</title>
+    <link>http://martimfasantos.github.io/blog/</link>
+    <description>Recent content in My Blog on Martim&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://martimfasantos.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My MSc Thesis: Aligning Language Models with Human Feedback without Reinforcement Learning</title>
+      <link>http://martimfasantos.github.io/blog/thesis/</link>
+      <pubDate>Tue, 05 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://martimfasantos.github.io/blog/thesis/</guid>
+      <description>Recently, I successfully defended my MSc Degree in Computer Science and Engineering Thesis on Aligning Language Models with Human Feedback without Reinforcement Learning. This research was supervised by André F.T. Martins, Head of Research at Unbabel, and Sweta Agrawal, a postdoctoral researcher at Instituto de Telecomunicações, in collaboration with Unbabel and SARDINE Lab.
+Thesis Overview Large language models (LLMs) are capable of generating human-like text and learning vast world knowledge. However, these models sometimes produce misleading or toxic content, highlighting the need to align them with human values for safer and more effective AI systems.</description>
+    </item>
+    
+    <item>
+      <title>Summer Internship @ Sky Portugal</title>
+      <link>http://martimfasantos.github.io/blog/summer-internship-sky/</link>
+      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://martimfasantos.github.io/blog/summer-internship-sky/</guid>
+      <description>A Memorable Start to My Career This summer, I had the incredible opportunity to begin my professional journey as an Apprentice Backend Developer at Sky Portugal. It was a transformative experience where I learned, grew, and collaborated with a talented and supportive team in an inspiring and dynamic environment.
+Key Contributions and Achievements One of the highlights of my internship was working on the development, enhancement, and deployment of a Slack Bot designed to automate repetitive manual processes.</description>
+    </item>
+    
+    <item>
+      <title>My Erasmus Experience 📖🌎</title>
+      <link>http://martimfasantos.github.io/blog/erasmus/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://martimfasantos.github.io/blog/erasmus/</guid>
+      <description>As one of the top universities in Europe, TUM is highly ranked in global and European university rankings. According to Times Higher Education World University Rankings 2024, TUM is among the top 30 globally, both overall and specifically for Computer Science. TUM is also recognized as the best university in Germany, highlighting its excellence in research and teaching.
+My Erasmus Experience @ TUM During my time in the Erasmus+ program, I had the privilege of immersing myself in an environment that challenged me intellectually and personally.</description>
+    </item>
+    
+  </channel>
+</rss>

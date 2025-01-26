@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Language Models on Martim&#39;s Portfolio</title>
+    <link>http://martimfasantos.github.io/tags/language-models/</link>
+    <description>Recent content in Language Models on Martim&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://martimfasantos.github.io/tags/language-models/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My MSc Thesis: Aligning Language Models with Human Feedback without Reinforcement Learning</title>
+      <link>http://martimfasantos.github.io/blog/thesis/</link>
+      <pubDate>Tue, 05 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://martimfasantos.github.io/blog/thesis/</guid>
+      <description>Recently, I successfully defended my MSc Degree in Computer Science and Engineering Thesis on Aligning Language Models with Human Feedback without Reinforcement Learning. This research was supervised by André F.T. Martins, Head of Research at Unbabel, and Sweta Agrawal, a postdoctoral researcher at Instituto de Telecomunicações, in collaboration with Unbabel and SARDINE Lab.
+Thesis Overview Large language models (LLMs) are capable of generating human-like text and learning vast world knowledge. However, these models sometimes produce misleading or toxic content, highlighting the need to align them with human values for safer and more effective AI systems.</description>
+    </item>
+    
+  </channel>
+</rss>
