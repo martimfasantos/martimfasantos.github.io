@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MCP on Martim&#39;s Portfolio</title>
+    <link>http://martimfasantos.github.io/tags/mcp/</link>
+    <description>Recent content in MCP on Martim&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://martimfasantos.github.io/tags/mcp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding Agentic AI: AI Agents, tools, and protocols</title>
+      <link>http://martimfasantos.github.io/blog/ai-agents/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://martimfasantos.github.io/blog/ai-agents/</guid>
+      <description>Recently, I&amp;rsquo;ve been diving deep into the world of AI agents – intelligent systems that can work autonomously to help us accomplish tasks. This isn&amp;rsquo;t just another tech trend; it&amp;rsquo;s a fundamental shift in how we interact with AI. Instead of simply asking questions and getting answers, we&amp;rsquo;re now entering an era where AI can take action, make decisions, and work alongside us as digital teammates.
+This post is a mix of research insights and my personal reflections on what Agentic AI really means today — how agents work, the frameworks behind them, and the protocols that let them talk to each other.</description>
+    </item>
+    
+  </channel>
+</rss>

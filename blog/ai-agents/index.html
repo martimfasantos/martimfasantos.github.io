@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=/fav.png type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --text-link-color: #007bff;
+        --text-secondary-link-color: #007bff;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --text-link-color-dark: #ffffff;
+        --text-secondary-link-color-dark: #bbbbbb;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        height: 0px;
+        width: 8px;
+        background-color: var(--background-color);
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background: #b0b0b0;
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+
+
+<meta name="description" content="">
+<link rel="stylesheet" href="/css/single.css">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
+
+
+  
+  
+
+  <title>
+Understanding Agentic AI: AI Agents, tools, and protocols | Martim&#39;s Portfolio
+
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  false ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const navbarHeight = document.getElementById("profileHeader").offsetHeight;
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        navLinks.forEach(link => {
+            link.addEventListener("click", function (event) {
+                const targetId = this.getAttribute("href").split("#")[1];
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    event.preventDefault();
+                    const targetPosition = targetElement.offsetTop - navbarHeight;
+
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+    });
+</script>
+
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="/">
+                
+                martim.
+                
+            </a>
+
+            
+                <div>
+                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='Ctrl &#43; k to Search...'
+                        aria-label="Search" oninput="searchOnChange(event)">
+                </div>
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+                        <li class="nav-item navbar-text d-block d-md-none">
+                            <div class="nav-link">
+                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='Ctrl &#43; k to Search...' aria-label="Search" oninput="searchOnChange(event)">
+                            </div>
+                        </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            About Me
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Experience
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#education"
+                            aria-label="education">
+                            Education
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#projects"
+                            aria-label="projects">
+                            Projects
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#contact"
+                            aria-label="contact">
+                            Contact
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/blog" title="My Blog">
+                            
+                            Blog
+                        </a>
+                    </li>
+                    
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="single">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-9">
+        <div class="pr-lg-4">
+          <div class="title mb-5">
+            <h1 class="text-center mb-4">Understanding Agentic AI: AI Agents, tools, and protocols</h1>
+            <div class="text-center">
+              
+              Sep 21, 2024
+
+              
+              <span id="readingTime">
+                min read
+              </span>
+              
+            </div>
+          </div>
+          
+          <article class="page-content  p-2">
+          <p>Recently, I&rsquo;ve been diving deep into the world of <strong>AI agents</strong> – intelligent systems that can work autonomously to help us accomplish tasks. This isn&rsquo;t just another tech trend; it&rsquo;s a fundamental shift in how we interact with AI. Instead of simply asking questions and getting answers, we&rsquo;re now entering an era where AI can take action, make decisions, and work alongside us as digital teammates.</p>
+<p>This post is a mix of <strong>research insights</strong> and <strong>my personal reflections</strong> on what Agentic AI really means today — how agents work, the frameworks behind them, and the protocols that let them talk to each other.</p>
+<hr>
+<h2 id="what-makes-an-ai-agent">What Makes an AI Agent?</h2>
+<p>At its core, <strong>Agentic AI</strong> describes AI systems that can operate autonomously, using reasoning and external tools to achieve goals. While a traditional LLM simply answers prompts, an agent can <strong>plan multi-step workflows</strong>, <strong>maintain memory</strong>, and <strong>execute tasks independently</strong>.</p>
+<p>Different players describe agents in their own way:</p>
+<ul>
+<li><strong><a href="https://cloud.google.com/discover/what-are-ai-agents">Google</a>:</strong> “software systems that use AI to pursue goals and complete tasks on behalf of users.”</li>
+<li><strong><a href="https://www.nvidia.com/en-us/glossary/ai-agents/">NVIDIA</a>:</strong> autonomous systems that orchestrate tools and manage workflows.</li>
+<li><strong><a href="https://platform.openai.com/docs/guides/agents">OpenAI</a>:</strong> “systems that intelligently accomplish tasks, from simple workflows to complex objectives.”</li>
+</ul>
+<p>Across these definitions, a few key capabilities stand out:</p>
+<ul>
+<li><strong>Goal-driven autonomy</strong> – minimal human guidance once a task is set.</li>
+<li><strong>Reasoning &amp; planning</strong> – breaking down goals into steps.</li>
+<li><strong>Action execution</strong> – using APIs, databases, and tools.</li>
+<li><strong>Memory</strong> – retaining context for consistency and learning.</li>
+<li><strong>Collaboration</strong> – working with other agents (or humans).</li>
+</ul>
+<p><strong>Example:</strong> Imagine a sales analysis agent. It doesn’t just answer “how were sales last quarter?” — it fetches data, runs scripts, builds charts, and delivers a report, end-to-end.</p>
+<hr>
+<h2 id="frameworks-that-power-agents">Frameworks That Power Agents</h2>
+<p>The AI agents ecosystem is growing fast, with frameworks that allow developers to build and experiment with AI agents:</p>
+<ul>
+<li><strong>OpenAI Agents SDK:</strong> Provides Python-based tools for creating agents that can perform multi-step tasks and interact with APIs <a href="https://openai.github.io/openai-agents-python/agents/">OpenAI Agents Python SDK</a>.</li>
+<li><strong>LlamaIndex Agents:</strong> Focused on document retrieval and reasoning, these agents can interact with structured or unstructured data sources <a href="https://docs.llamaindex.ai/en/stable/use_cases/agents/">LlamaIndex</a>.</li>
+<li><strong>Google Agent Development Kit (ADK):</strong> Provides components to develop agents compatible with A2A protocols for Agent-to-Agent communication <a href="https://google.github.io/adk-docs/#what-is-agent-development-kit">Google ADK</a>.</li>
+<li><strong>LangChain Agents:</strong> A popular framework for building agents that can use language models to interact with various tools and APIs <a href="https://docs.langchain.com/oss/python/langchain/agents">LangChain</a>.</li>
+<li><strong>Others worth exploring:</strong> AG2, Agno, Autogen, CrewAI, LangGraph, Pydantic-AI, smolagents</li>
+</ul>
+<p><strong>🧑🏻‍💻 If you’re curious, I’ve put together a repo where you can try out different frameworks in practice: <a href="https://github.com/martimfasantos/ai-agents-frameworks">AI Agent Frameworks Repo</a>. It’s not meant to be production-ready, just a learning playground.</strong></p>
+<p>These frameworks are powerful, but agents don’t exist in isolation. To truly scale and collaborate, <strong>we need shared standards and protocols</strong> that let agents talk to each other and to the tools they rely on. That’s where MCP and A2A come in.</p>
+<hr>
+<h1 id="protocols-the-glue-for-multi-agent-collaboration">Protocols: The Glue for Multi-Agent Collaboration</h1>
+<p>Frameworks are great, but without common standards, agents risk becoming isolated silos. This is where protocols step in. Two of the most promising are <strong>MCP</strong> and <strong>A2A</strong>.</p>
+<h3 id="model-context-protocol-mcp">Model Context Protocol (MCP)</h3>
+<p>Developed by Anthropic, <a href="https://modelcontextprotocol.io/docs/getting-started/intro">MCP</a> acts like a <strong>USB-C port for AI</strong> — a simple, universal way for models to connect to the world around them. Instead of building custom integrations from scratch, MCP provides a standard interface that lets systems like Claude or ChatGPT tap into data sources (from local files to databases), tools (like search engines or calculators), and even workflows (such as specialized prompts or pipelines) — enabling them to access key information and perform tasks.</p>
+<ul>
+<li>Supports streaming and long-running tasks.</li>
+<li>Ensures interoperability across platforms.</li>
+</ul>
+<p>Think of MCP as the layer that lets us perform certain tasks without reinventing the wheel every time.</p>
+<h3 id="agent-to-agent-protocol-a2a">Agent-to-Agent Protocol (A2A)</h3>
+<p>Proposed by Google, <a href="https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/">A2A</a> focuses on <strong>direct agent collaboration</strong>. A2A enables agents to collaborate in their natural, unstructured modalities, even when they don’t share memory, tools and context. It enables true multi-agent scenarios without limiting an agent to a “tool.”</p>
+<p>From a technical standpoint, A2A is:</p>
+<ul>
+<li>Built on HTTP, SSE, and JSON-RPC — easy to integrate into existing stacks.</li>
+<li>Secure by default with enterprise-grade auth.</li>
+<li>Supports long-running and multimodal tasks (text, audio, video).</li>
+</ul>
+<p>Whereas <strong>MCP connects agents to services and tools</strong>, A2A connects <strong>agents to each other</strong> — which makes them a great pair for building more flexible and connected AI systems.</p>
+<hr>
+<h2 id="insights-from-research">Insights from Research</h2>
+<p>I’ve been following this topic closely for a while and even shared some of my favorite findings on LinkedIn. Two stand out because they capture both the future architecture of agents and the practical tricks that make them work better today.</p>
+<p>Here’s a smoother, more blog-ready version of that section. It keeps the <strong>research depth</strong>, integrates your <strong>LinkedIn posts</strong> as highlights, and <strong>invites readers to explore them fully</strong> without overwhelming the flow:</p>
+<hr>
+<h2 id="insights-from-research-1">Insights from Research</h2>
+<p>I’ve been following this topic closely for a while and even shared some of my favorite findings on LinkedIn. Two stand out because they capture both the <strong>future architecture of agents</strong> and the <strong>practical tricks that make them work better today</strong>.</p>
+<h3 id="1-small-language-models-are-the-future-of-agentic-ai-">1. Small Language Models are the Future of Agentic AI 🚀</h3>
+<p>In a recent NVIDIA paper — <em><a href="https://arxiv.org/pdf/2506.02153">Small Language Models are the Future of Agentic AI</a></em> — the bold claim is that most agentic tasks don’t need a massive LLM. Instead, <strong>Small Language Models (SLMs)</strong> are often <strong>faster, cheaper, and more predictable</strong>.</p>
+<p>The authors argue that the most effective design is <strong>heterogeneous</strong>:</p>
+<ul>
+<li>A large model handles <strong>planning and orchestration</strong>,</li>
+<li>A swarm of SLMs executes <strong>narrow, repetitive subtasks</strong> reliably.</li>
+</ul>
+<p>This resonates strongly with my MSc research, where I showed that a <strong>1.7B parameter model</strong>, properly fine-tuned, could match the performance of much larger 7B–13B models on machine translation — at a fraction of the cost. This is a finding that continues to influence how I think about building scalable and solid AI systems.</p>
+<p>👉 Full post here: <a href="https://www.linkedin.com/posts/martimfasantos_agenticai-llm-slm-activity-7345405789177532417-fkNF?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAADfauDMBfW3k8gXaZNa1WqdB0v0NbKEqu9g">LinkedIn post on SLMs</a></p>
+<hr>
+<h3 id="2-better-agents-need-better-prompts-">2. Better Agents Need Better Prompts ✍️</h3>
+<p>The second piece comes from OpenAI’s official <em><a href="https://cookbook.openai.com/examples/gpt4-1_prompting_guide">GPT-4.1 Prompting Guide</a></em>. After experimenting with agent pipelines, one thing became clear: <strong>prompt quality directly impacts agent performance</strong>.</p>
+<p>A few practical takeaways from the guide:</p>
+<ul>
+<li>Encourage <strong>step-by-step reasoning</strong> (chain-of-thought) and clear <strong>instructions</strong>.</li>
+<li>Prioritize <strong>clarity over quantity</strong>.</li>
+<li>Use <strong>persistent reminders</strong> for agent behavior (e.g., “plan before acting”).</li>
+<li>Anchor key instructions at both the <strong>start and end</strong> of prompts if needed.</li>
+</ul>
+<p>Even with advanced models like GPT-4.1, these simple strategies can be the difference between a flaky agent and one that works reliably in production.</p>
+<p>👉 Full post here: <a href="https://www.linkedin.com/posts/martimfasantos_gpt-41-prompting-guide-openai-cookbook-activity-7328011161910534144-2KHm?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAADfauDMBfW3k8gXaZNa1WqdB0v0NbKEqu9g">LinkedIn post on prompting</a></p>
+<hr>
+<h2 id="personal-reflections">Personal Reflections</h2>
+<p>I believe that agentic AI represents a significant evolution in how we build and interact with AI systems. By enabling autonomy, planning, and collaboration, agents can tackle complex, corporate tasks better than a simple ChatGPT or Gemini.</p>
+<p>The big power of these tools is their capacity to automate workflows and <strong>collaborate</strong> with humans to achieve goals faster and more effectively. Yes, you heard me right: <strong>COLLABORATE</strong>. I believe that the future will involve humans and AI agents working side-by-side, each complementing the other&rsquo;s strengths. We&rsquo;ll see agents handling routine, structured tasks, while humans focus on creativity, validation, and strategic decision-making.</p>
+<p>To understand and leverage agentic AI effectively, companies should understand which processes can benefit from automation, identify suitable systems and tools, and invest in building modular, interoperable architectures that can evolve over time and interact with humans</p>
+<hr>
+<h2 id="some-references-and-suggested-reading">Some References and suggested reading</h2>
+<ul>
+<li><a href="https://cloud.google.com/discover/what-are-ai-agents">Google Cloud – What are AI Agents</a></li>
+<li><a href="https://www.ibm.com/think/topics/ai-agents">IBM – AI Agents</a></li>
+<li><a href="https://www.nvidia.com/en-us/glossary/ai-agents/">NVIDIA – AI Agents Glossary</a></li>
+<li><a href="https://platform.openai.com/docs/guides/agents">OpenAI – Agents Guide</a></li>
+<li><a href="https://cookbook.openai.com/examples/gpt4-1_prompting_guide#1-agentic-workflows">OpenAI Cookbook – Agentic Workflows</a></li>
+<li><a href="https://docs.llamaindex.ai/en/stable/use_cases/agents/">LlamaIndex – Agents Use Cases</a></li>
+<li><a href="https://openai.github.io/openai-agents-python/agents/">OpenAI Agents Python SDK</a></li>
+<li><a href="https://google.github.io/adk-docs/#what-is-agent-development-kit">Google ADK – Agent Development Kit</a></li>
+<li><a href="https://arxiv.org/html/2505.10468v1">AI Agents vs. Agentic AI: A Conceptual Taxonomy, Applications and Challenges</a></li>
+<li><a href="https://arxiv.org/abs/2210.03629">ReAct: Synergizing Reasoning and Acting in Language Models</a></li>
+<li><a href="https://arxiv.org/abs/2506.02153">Small Language Models are the Future of Agentic AI</a></li>
+</ul>
+<hr>
+
+          </article>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-3">
+        <div id="stickySideBar" class="sticky-sidebar">
+          
+          <aside class="toc">
+              <h5>
+                Table Of Contents
+              </h5>
+              <div class="toc-content">
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-makes-an-ai-agent">What Makes an AI Agent?</a></li>
+    <li><a href="#frameworks-that-power-agents">Frameworks That Power Agents</a></li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#model-context-protocol-mcp">Model Context Protocol (MCP)</a></li>
+        <li><a href="#agent-to-agent-protocol-a2a">Agent-to-Agent Protocol (A2A)</a></li>
+      </ul>
+    </li>
+    <li><a href="#insights-from-research">Insights from Research</a></li>
+    <li><a href="#insights-from-research-1">Insights from Research</a>
+      <ul>
+        <li><a href="#1-small-language-models-are-the-future-of-agentic-ai-">1. Small Language Models are the Future of Agentic AI 🚀</a></li>
+        <li><a href="#2-better-agents-need-better-prompts-">2. Better Agents Need Better Prompts ✍️</a></li>
+      </ul>
+    </li>
+    <li><a href="#personal-reflections">Personal Reflections</a></li>
+    <li><a href="#some-references-and-suggested-reading">Some References and suggested reading</a></li>
+  </ul>
+</nav>
+              </div>
+          </aside>
+          
+
+          
+
+          
+          <aside class="social">
+            <h5>Social</h5>
+            <div class="social-content">
+              <ul class="list-inline">
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fmartimfasantos.github.io%2fblog%2fai-agents%2f">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://twitter.com/share?text=Understanding%20Agentic%20AI%3a%20AI%20Agents%2c%20tools%2c%20and%20protocols&url=http%3a%2f%2fmartimfasantos.github.io%2fblog%2fai-agents%2f">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=Understanding%20Agentic%20AI%3a%20AI%20Agents%2c%20tools%2c%20and%20protocols: http%3a%2f%2fmartimfasantos.github.io%2fblog%2fai-agents%2f">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href='mailto:?subject=Understanding%20Agentic%20AI%3a%20AI%20Agents%2c%20tools%2c%20and%20protocols&amp;body=Check%20out%20this%20site http%3a%2f%2fmartimfasantos.github.io%2fblog%2fai-agents%2f'>
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-9 p-4">
+        
+      </div>
+    </div>
+  </div>
+  <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+    <i class="fas fa-angle-up"></i>
+  </button>
+</section>
+
+
+<div class="progress">
+  <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<Script src="/js/scrollProgressBar.js"></script>
+
+
+<script>
+  var topScroll = document.getElementById("topScroll");
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topScroll.style.display = "block";
+    } else {
+      topScroll.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  
+  let stickySideBarElem = document.getElementById("stickySideBar");
+  let stickyNavBar =  true ;
+  if(stickyNavBar) {
+    let headerElem = document.getElementById("profileHeader");
+    let headerHeight = headerElem.offsetHeight + 15;
+    stickySideBarElem.style.top = headerHeight + "px";
+  } else {
+    stickySideBarElem.style.top = "50px";
+  }
+</script>
+
+
+<script src="/js/readingTime.js"></script>
+
+
+
+  </div><footer>
+    
+ 
+ 
+<div class="container py-3" id="recent-posts">
+    
+    
+    <div class="h3 text-center text-secondary py-3">
+        Recent Posts
+    </div>
+    <div class="row justify-content-center">
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blog/career-start-daredata/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Building my career at DareData ⚡">Building my career at DareData ⚡</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>A few months ago, I took an important step in my career by joining DareData as a Data Scientist.
+Even though I had done a short internship before, this is my first longer-term professional role — a place where I can really grow, contribute, and start shaping the direction of my career. The first …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Sep 21, 2025</span>
+                    <a href="/blog/career-start-daredata/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blog/thesis/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="📜 My MSc Thesis: Aligning Language Models with Human Feedback without Reinforcement Learning">📜 My MSc Thesis: Aligning …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>Recently, I successfully defended my MSc Degree in Computer Science and Engineering Thesis on Aligning Language Models with Human Feedback without Reinforcement Learning. This research was supervised by André F.T. Martins, Head of Research at Unbabel, and Sweta Agrawal, postdoctoral researcher at …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Nov 5, 2024</span>
+                    <a href="/blog/thesis/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/blog/ai-agents/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Understanding Agentic AI: AI Agents, tools, and protocols">Understanding Agentic AI: AI …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>Recently, I&rsquo;ve been diving deep into the world of AI agents – intelligent systems that can work autonomously to help us accomplish tasks. This isn&rsquo;t just another tech trend; it&rsquo;s a fundamental shift in how we interact with AI. Instead of simply asking questions and getting answers, …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">Sep 21, 2024</span>
+                    <a href="/blog/ai-agents/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="text-center pt-2">
+    
+    <span class="px-1">
+        <a href="https://www.linkedin.com/in/martimfasantos/" aria-label="linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
+                viewBox="0 0 512 512">
+                <rect width="512" height="512" fill="#0077b5" rx="15%" />
+                <circle cx="142" cy="138" r="37" />
+                <path stroke="#fff" stroke-width="66" d="M244 194v198M142 194v198" />
+                <path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32" />
+            </svg>
+        </a>
+    </span>
+    
+    
+    
+    <span class="px-1">
+        <a href="https://github.com/martimfasantos" aria-label="github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2.7em" height="2.7em" viewBox="0 0 1792 1792">
+                <path id="footer-socialNetworks-github-svg-path"
+                    d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
+
+                <metadata>
+                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                        <rdf:Description about="https://iconscout.com/legal#licenses"
+                            dc:title="Github, Online, Project, Hosting, Square"
+                            dc:description="Github, Online, Project, Hosting, Square" dc:publisher="Iconscout"
+                            dc:date="2016-12-14" dc:format="image/svg+xml" dc:language="en">
+                            <dc:creator>
+                                <rdf:Bag>
+                                    <rdf:li>Font Awesome</rdf:li>
+                                </rdf:Bag>
+                            </dc:creator>
+                        </rdf:Description>
+                    </rdf:RDF>
+                </metadata>
+            </svg>
+        </a>
+    </span>
+    
+
+    
+
+    
+    <a href="https://www.instagram.com/martimfasantos/" aria-label="instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+            <radialGradient id="yOrnnhliCrdS2gy~4tD8ma" cx="19.38" cy="42.035" r="44.899"
+                gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#fd5" />
+                <stop offset=".328" stop-color="#ff543f" />
+                <stop offset=".348" stop-color="#fc5245" />
+                <stop offset=".504" stop-color="#e64771" />
+                <stop offset=".643" stop-color="#d53e91" />
+                <stop offset=".761" stop-color="#cc39a4" />
+                <stop offset=".841" stop-color="#c837ab" />
+            </radialGradient>
+            <path fill="url(#yOrnnhliCrdS2gy~4tD8ma)"
+                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z" />
+            <radialGradient id="yOrnnhliCrdS2gy~4tD8mb" cx="11.786" cy="5.54" r="29.813"
+                gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#4168c9" />
+                <stop offset=".999" stop-color="#4168c9" stop-opacity="0" />
+            </radialGradient>
+            <path fill="url(#yOrnnhliCrdS2gy~4tD8mb)"
+                d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z" />
+            <path fill="#fff"
+                d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z" />
+            <circle cx="31.5" cy="16.5" r="1.5" fill="#fff" />
+            <path fill="#fff"
+                d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z" />
+        </svg>
+    </a>
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            
+                <div class="pb-2">
+                    <a class="navbar-brand primary-font text-wrap" 
+                    href="http://martimfasantos.github.io" title="Martim&#39;s Portfolio">
+                        martim.
+                    </a>
+                </div>
+            
+            &copy; 2025  All rights reserved
+            <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
+                <a href="https://gohugo.io/" target="_blank">
+                    Hugo
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (document.body.className.includes("light")) {
+        document.body.classList.add('dark');
+        localStorage.setItem("pref-theme", 'dark');
+    }
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+    <script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+<script src="/js/contact.js"></script>
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>
