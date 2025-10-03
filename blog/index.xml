@@ -6,7 +6,17 @@
     <description>Recent content in My Blog on Martim&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://martimfasantos.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://martimfasantos.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🤖 Understanding AI Agents, tools, and protocols</title>
+      <link>http://martimfasantos.github.io/blog/ai-agents/</link>
+      <pubDate>Thu, 02 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://martimfasantos.github.io/blog/ai-agents/</guid>
+      <description>Recently, I&amp;rsquo;ve been diving deep into the world of AI agents – intelligent systems that can work autonomously to help us accomplish tasks. This isn&amp;rsquo;t just another tech trend; it&amp;rsquo;s a fundamental shift in how we interact with AI. Instead of simply asking questions and getting answers, we&amp;rsquo;re now entering an era where AI can take action, make decisions, and work alongside us as digital teammates.
+This post is a mix of research insights and my personal reflections on what Agentic AI really means today — how agents work, the frameworks behind them, and the protocols that let them talk to each other.</description>
+    </item>
+    
     <item>
       <title>Building my career at DareData ⚡</title>
       <link>http://martimfasantos.github.io/blog/career-start-daredata/</link>
@@ -25,16 +35,6 @@ Even though I had done a short internship before, this is my first longer-term p
       <guid>http://martimfasantos.github.io/blog/thesis/</guid>
       <description>Recently, I successfully defended my MSc Degree in Computer Science and Engineering Thesis on Aligning Language Models with Human Feedback without Reinforcement Learning. This research was supervised by André F.T. Martins, Head of Research at Unbabel, and Sweta Agrawal, postdoctoral researcher at Instituto de Telecomunicações, in collaboration Unbabel and SARDINE Lab.
 Thesis Overview Large language models (LLMs) are capable of generating human-like text and learning vast world knowledge. However, these models sometimes produce misleading or toxic content, highlighting the need to align them with human values for safer and more effective AI systems.</description>
-    </item>
-    
-    <item>
-      <title>Understanding Agentic AI: AI Agents, tools, and protocols</title>
-      <link>http://martimfasantos.github.io/blog/ai-agents/</link>
-      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://martimfasantos.github.io/blog/ai-agents/</guid>
-      <description>Recently, I&amp;rsquo;ve been diving deep into the world of AI agents – intelligent systems that can work autonomously to help us accomplish tasks. This isn&amp;rsquo;t just another tech trend; it&amp;rsquo;s a fundamental shift in how we interact with AI. Instead of simply asking questions and getting answers, we&amp;rsquo;re now entering an era where AI can take action, make decisions, and work alongside us as digital teammates.
-This post is a mix of research insights and my personal reflections on what Agentic AI really means today — how agents work, the frameworks behind them, and the protocols that let them talk to each other.</description>
     </item>
     
     <item>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Understanding Agentic AI: AI Agents, tools, and protocols on Martim&#39;s Portfolio</title>
+    <title>🤖 Understanding AI Agents, tools, and protocols on Martim&#39;s Portfolio</title>
     <link>http://martimfasantos.github.io/blog/ai-agents/</link>
-    <description>Recent content in Understanding Agentic AI: AI Agents, tools, and protocols on Martim&#39;s Portfolio</description>
+    <description>Recent content in 🤖 Understanding AI Agents, tools, and protocols on Martim&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://martimfasantos.github.io/blog/ai-agents/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://martimfasantos.github.io/blog/ai-agents/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
