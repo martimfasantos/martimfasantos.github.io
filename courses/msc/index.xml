@@ -4,7 +4,8 @@
     <title>MSc Courses on Martim&#39;s Portfolio</title>
     <link>http://martimfasantos.github.io/courses/msc/</link>
     <description>Recent content in MSc Courses on Martim&#39;s Portfolio</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://martimfasantos.github.io/courses/msc/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://martimfasantos.github.io/courses/msc/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

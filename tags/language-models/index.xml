@@ -4,18 +4,16 @@
     <title>Language Models on Martim&#39;s Portfolio</title>
     <link>http://martimfasantos.github.io/tags/language-models/</link>
     <description>Recent content in Language Models on Martim&#39;s Portfolio</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://martimfasantos.github.io/tags/language-models/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://martimfasantos.github.io/tags/language-models/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>📜 My MSc Thesis: Aligning Language Models with Human Feedback without Reinforcement Learning</title>
       <link>http://martimfasantos.github.io/blog/thesis/</link>
       <pubDate>Tue, 05 Nov 2024 00:00:00 +0000</pubDate>
-      
       <guid>http://martimfasantos.github.io/blog/thesis/</guid>
-      <description>Recently, I successfully defended my MSc Degree in Computer Science and Engineering Thesis on Aligning Language Models with Human Feedback without Reinforcement Learning. This research was supervised by André F.T. Martins, Head of Research at Unbabel, and Sweta Agrawal, Research Scientist at Google, in collaboration Unbabel and SARDINE Lab.
-Thesis Overview Large language models (LLMs) are capable of generating human-like text and learning vast world knowledge. However, these models sometimes produce misleading or toxic content, highlighting the need to align them with human values for safer and more effective AI systems.</description>
+      <description>&lt;p&gt;Recently, I successfully defended my MSc Degree in Computer Science and Engineering Thesis on &lt;em&gt;Aligning Language Models with Human Feedback without Reinforcement Learning&lt;/em&gt;. This research was supervised by &lt;a href=&#34;https://andre-martins.github.io/&#34;&gt;&lt;strong&gt;André F.T. Martins&lt;/strong&gt;&lt;/a&gt;, Head of Research at Unbabel, and &lt;a href=&#34;https://sweta20.github.io/&#34;&gt;&lt;strong&gt;Sweta Agrawal&lt;/strong&gt;&lt;/a&gt;, Research Scientist at Google, in collaboration &lt;a href=&#34;https://unbabel.com/&#34;&gt;Unbabel&lt;/a&gt; and &lt;a href=&#34;https://sardine-lab.github.io/&#34;&gt;SARDINE Lab&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;thesis-overview&#34;&gt;Thesis Overview&lt;/h3&gt;&#xA;&lt;p&gt;Large language models (LLMs) are capable of generating human-like text and learning vast world knowledge. However, these models sometimes produce misleading or toxic content, highlighting the need to align them with human values for safer and more effective AI systems. Traditionally, the widely used &lt;strong&gt;Reinforcement Learning from Human Feedback (RLHF)&lt;/strong&gt; method has been a go-to strategy for improving this alignment, as seen in models like &lt;strong&gt;GPT-3.5&lt;/strong&gt; and &lt;strong&gt;GPT-4&lt;/strong&gt;. However, RLHF is complex, unstable, and highly sensitive to hyperparameters, making it difficult to apply universally.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -4,58 +4,44 @@
     <title>My Blog on Martim&#39;s Portfolio</title>
     <link>http://martimfasantos.github.io/blog/</link>
     <description>Recent content in My Blog on Martim&#39;s Portfolio</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://martimfasantos.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://martimfasantos.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>🤖 Understanding AI Agents, tools, and protocols</title>
       <link>http://martimfasantos.github.io/blog/ai-agents/</link>
       <pubDate>Thu, 02 Oct 2025 00:00:00 +0000</pubDate>
-      
       <guid>http://martimfasantos.github.io/blog/ai-agents/</guid>
-      <description>Recently, I&amp;rsquo;ve been diving deep into the world of AI agents – intelligent systems that can work autonomously to help us accomplish tasks. This isn&amp;rsquo;t just another tech trend; it&amp;rsquo;s a fundamental shift in how we interact with AI. Instead of simply asking questions and getting answers, we&amp;rsquo;re now entering an era where AI can take action, make decisions, and work alongside us as digital teammates.
-This post is a mix of research insights and my personal reflections on what Agentic AI really means today — how agents work, the frameworks behind them, and the protocols that let them talk to each other.</description>
+      <description>&lt;p&gt;Recently, I&amp;rsquo;ve been diving deep into the world of &lt;strong&gt;AI agents&lt;/strong&gt; – intelligent systems that can work autonomously to help us accomplish tasks. This isn&amp;rsquo;t just another tech trend; it&amp;rsquo;s a fundamental shift in how we interact with AI. Instead of simply asking questions and getting answers, we&amp;rsquo;re now entering an era where AI can take action, make decisions, and work alongside us as digital teammates.&lt;/p&gt;&#xA;&lt;p&gt;This post is a mix of &lt;strong&gt;research insights&lt;/strong&gt; and &lt;strong&gt;my personal reflections&lt;/strong&gt; on what Agentic AI really means today — how agents work, the frameworks behind them, and the protocols that let them talk to each other.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Building my career at DareData ⚡</title>
       <link>http://martimfasantos.github.io/blog/career-start-daredata/</link>
       <pubDate>Sun, 21 Sep 2025 00:00:00 +0000</pubDate>
-      
       <guid>http://martimfasantos.github.io/blog/career-start-daredata/</guid>
-      <description>A few months ago, I took an important step in my career by joining DareData as a Data Scientist.
-Even though I had done a short internship before, this is my first longer-term professional role — a place where I can really grow, contribute, and start shaping the direction of my career. The first months were exciting and challenging at the same time, but above all, they gave me the chance to learn, get hands-on experience, and see how things work in a real professional AI setting.</description>
+      <description>&lt;p&gt;A few months ago, I took an important step in my career by joining &lt;strong&gt;DareData&lt;/strong&gt; as a &lt;strong&gt;Data Scientist&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Even though I had done a short internship before, this is my first longer-term professional role — a place where I can really grow, contribute, and start shaping the direction of my career. The first months were exciting and challenging at the same time, but above all, they gave me the chance to learn, get hands-on experience, and see how things work in a real professional AI setting.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>📜 My MSc Thesis: Aligning Language Models with Human Feedback without Reinforcement Learning</title>
       <link>http://martimfasantos.github.io/blog/thesis/</link>
       <pubDate>Tue, 05 Nov 2024 00:00:00 +0000</pubDate>
-      
       <guid>http://martimfasantos.github.io/blog/thesis/</guid>
-      <description>Recently, I successfully defended my MSc Degree in Computer Science and Engineering Thesis on Aligning Language Models with Human Feedback without Reinforcement Learning. This research was supervised by André F.T. Martins, Head of Research at Unbabel, and Sweta Agrawal, Research Scientist at Google, in collaboration Unbabel and SARDINE Lab.
-Thesis Overview Large language models (LLMs) are capable of generating human-like text and learning vast world knowledge. However, these models sometimes produce misleading or toxic content, highlighting the need to align them with human values for safer and more effective AI systems.</description>
+      <description>&lt;p&gt;Recently, I successfully defended my MSc Degree in Computer Science and Engineering Thesis on &lt;em&gt;Aligning Language Models with Human Feedback without Reinforcement Learning&lt;/em&gt;. This research was supervised by &lt;a href=&#34;https://andre-martins.github.io/&#34;&gt;&lt;strong&gt;André F.T. Martins&lt;/strong&gt;&lt;/a&gt;, Head of Research at Unbabel, and &lt;a href=&#34;https://sweta20.github.io/&#34;&gt;&lt;strong&gt;Sweta Agrawal&lt;/strong&gt;&lt;/a&gt;, Research Scientist at Google, in collaboration &lt;a href=&#34;https://unbabel.com/&#34;&gt;Unbabel&lt;/a&gt; and &lt;a href=&#34;https://sardine-lab.github.io/&#34;&gt;SARDINE Lab&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;thesis-overview&#34;&gt;Thesis Overview&lt;/h3&gt;&#xA;&lt;p&gt;Large language models (LLMs) are capable of generating human-like text and learning vast world knowledge. However, these models sometimes produce misleading or toxic content, highlighting the need to align them with human values for safer and more effective AI systems. Traditionally, the widely used &lt;strong&gt;Reinforcement Learning from Human Feedback (RLHF)&lt;/strong&gt; method has been a go-to strategy for improving this alignment, as seen in models like &lt;strong&gt;GPT-3.5&lt;/strong&gt; and &lt;strong&gt;GPT-4&lt;/strong&gt;. However, RLHF is complex, unstable, and highly sensitive to hyperparameters, making it difficult to apply universally.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Summer Internship @ Sky Portugal</title>
       <link>http://martimfasantos.github.io/blog/summer-internship-sky/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      
       <guid>http://martimfasantos.github.io/blog/summer-internship-sky/</guid>
-      <description>A Memorable Start to My Career This summer, I had the incredible opportunity to begin my professional journey as an Apprentice Backend Developer at Sky Portugal. It was a transformative experience where I learned, grew, and collaborated with a talented and supportive team in an inspiring and dynamic environment.
-Key Contributions and Achievements One of the highlights of my internship was working on the development, enhancement, and deployment of a Slack Bot designed to automate repetitive manual processes.</description>
+      <description>&lt;h2 id=&#34;a-memorable-start-to-my-career&#34;&gt;A Memorable Start to My Career&lt;/h2&gt;&#xA;&lt;p&gt;This summer, I had the incredible opportunity to begin my professional journey as an &lt;strong&gt;Apprentice Backend Developer&lt;/strong&gt; at &lt;strong&gt;Sky Portugal&lt;/strong&gt;. It was a transformative experience where I learned, grew, and collaborated with a talented and supportive team in an inspiring and dynamic environment.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-contributions-and-achievements&#34;&gt;Key Contributions and Achievements&lt;/h2&gt;&#xA;&lt;p&gt;One of the highlights of my internship was working on the development, enhancement, and deployment of a &lt;strong&gt;Slack Bot&lt;/strong&gt; designed to automate repetitive manual processes. A significant part of my work involved migrating the bot’s codebase from &lt;strong&gt;Python to Kotlin&lt;/strong&gt;, a project that allowed me to make meaningful contributions by:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>My Erasmus Experience 📖🌎</title>
       <link>http://martimfasantos.github.io/blog/erasmus/</link>
       <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
-      
       <guid>http://martimfasantos.github.io/blog/erasmus/</guid>
-      <description>As one of the top universities in Europe, TUM is highly ranked in global and European university rankings. According to Times Higher Education World University Rankings 2024, TUM is the top 30 university globally and top 14 in Computer Science, AI and Data Science. TUM is also recognized as the best university in Germany, highlighting its excellence in research and teaching.
-My Erasmus Experience @ TUM During my time in the Erasmus+ program, I had the privilege of immersing myself in an environment that challenged me intellectually and personally.</description>
+      <description>&lt;p&gt;As one of the top universities in Europe, TUM is highly ranked in global and European university rankings. According to Times Higher Education World University Rankings 2024, &lt;strong&gt;TUM is the top 30 university globally&lt;/strong&gt; and &lt;strong&gt;top 14 in Computer Science, AI and Data Science&lt;/strong&gt;. TUM is also recognized as the best university in Germany, highlighting its excellence in research and teaching.&lt;/p&gt;&#xA;&lt;h2 id=&#34;my-erasmus-experience--tum&#34;&gt;My Erasmus Experience @ TUM&lt;/h2&gt;&#xA;&lt;p&gt;During my time in the Erasmus+ program, I had the privilege of immersing myself in an environment that challenged me intellectually and personally. The academic environment at TUM challenged me in all the right ways and introduced me to diverse perspectives through interactions with students and colleagues from all around the world.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
